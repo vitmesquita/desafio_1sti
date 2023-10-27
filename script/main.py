@@ -115,7 +115,7 @@ def main():
 			X = vectorizer.fit_transform([' '.join(list_words)])
 
 			# Printando
-			st.write(pd.Series(index = vectorizer.get_feature_names(),
+			st.write(pd.Series(index = vectorizer.get_feature_names_out(),
 					data = X.toarray()[0]).sort_values(ascending = False).to_frame(name='Contagem'))
 
 			# Gerando figura de bigramas
@@ -135,7 +135,7 @@ def main():
 			vectorizer = CountVectorizer(ngram_range = (2,2))
 			X = vectorizer.fit_transform([' '.join(list_words)])
 
-			st.write(pd.Series(index = vectorizer.get_feature_names(),
+			st.write(pd.Series(index = vectorizer.get_feature_names_out(),
 						data = X.toarray()[0]).sort_values(ascending = False).to_frame(name='Contagem'))
 
 			# Gerando figura de palavras
@@ -201,7 +201,7 @@ def main():
 			X = vectorizer.fit_transform([' '.join(list_words_range)])
 
 			# Plotando 
-			st.write(pd.Series(index = vectorizer.get_feature_names(),
+			st.write(pd.Series(index = vectorizer.get_feature_names_out(),
 					data = X.toarray()[0]).sort_values(ascending = False).to_frame(name = 'Contagem'))
 
 			# Gerando figura de palavras
@@ -221,7 +221,7 @@ def main():
 			vectorizer = CountVectorizer(ngram_range = (2,2))
 			X = vectorizer.fit_transform([' '.join(list_words_range)])
 
-			st.write(pd.Series(index = vectorizer.get_feature_names(),
+			st.write(pd.Series(index = vectorizer.get_feature_names_out(),
 						data = X.toarray()[0]).sort_values(ascending = False).to_frame(name='Contagem'))
 
 			# Gerando figura de palavras
