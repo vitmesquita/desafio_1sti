@@ -4,6 +4,5 @@ streamlit
 spacy_streamlit
 wordcloud
 numpy
-re
 nltk
 scikit-learn
