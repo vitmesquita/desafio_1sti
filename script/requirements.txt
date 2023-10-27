@@ -1,7 +1,7 @@
 youtube_transcript_api
 spacy==2.3.5
 pyresparser
-streamlit
+streamlit>=1.0
 spacy_streamlit
 wordcloud
 numpy
