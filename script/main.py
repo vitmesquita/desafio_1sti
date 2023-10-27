@@ -1,3 +1,5 @@
+!python -m spacy download en_core_web_sm
+
 from youtube_transcript_api import YouTubeTranscriptApi
 import re
 import string
